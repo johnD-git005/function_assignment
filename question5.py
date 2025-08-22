@@ -22,7 +22,7 @@ def check_password_strength():
 	elif len(password) >= 6 and len(password) <= 10:
 		print("\n Password Strength: Medium")
 
-	elif len(password) > 10 and password.isdigit and password.isalpha:
+	elif len(password) > 10:
 		print("\n Strong Password!")
 
 	else:
