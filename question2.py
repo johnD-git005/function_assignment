@@ -1,21 +1,19 @@
 ''' Write a function count_vowels(text, vowels="aeiou") that counts how many vowels appear in a given text.
   Example: count_vowels("Python is fun") should return 3. '''
 
-vowels = "aeiou"
-word = input("Enter Text: ").lower()
 vowel_list = []
 
-def count_vowels():
+def count_vowels(text, vowels = "aeiou"):
 	flag = False
-
-	for vowel in word:
+	for vowel in text:
 		if vowel in vowels:
 			vowel_list.append(vowel)
-			continue
-			flag = True 
+			flag = True
+		
 	else:
-		if flag:
+		if flag == False:
 			print("Vowel Not Found!")
 
-count_vowels()
+count_vowels("Python is fun")
 print(len(vowel_list))
+
