@@ -1,8 +1,9 @@
 ''' Write a function called check_password_strength that takes a password string and returns "Weak", "Medium", or "Strong" based on these criteria: Weak (less than 6 characters), Medium (6-10 characters), Strong (more than 10 characters and contains both letters and numbers).'''
 
-password = input("Enter Password \n Password must contain both letters and numbers: ")
 
 def check_password_strength():
+
+	password = input("Enter Password \n Password must contain both letters and numbers: ")
 
 	if " " in password:
 		print("\n Invalid Password! spaces are not allowed")
@@ -26,6 +27,6 @@ def check_password_strength():
 		print("\n Strong Password!")
 
 	else:
-		pass
+		print("Password is not Valid!")
 
 check_password_strength()
